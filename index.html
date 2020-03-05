@@ -13,14 +13,29 @@
 
 <body>
   <header id="nav">
-    <div class="topnav">
+    <div class="search">
+      <div class="search-icons">
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+      <div id="search-input">
+        <input type="text" placeholder="Search books, genres & authors">
+      </div>
+      <div class="search-icons" id="mic">
+        <ion-icon name="mic-outline"></ion-icon>
+      </div>
+    </div>
+
+
+
+
+    <!-- <div class="topnav">
       <div class="search-container">
         <form action="/action_page.php">
           <input type="text" placeholder="Search.." name="search">
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -46,7 +61,7 @@
   <main>
     <!-- Image card -->
 
-    <div class="demo-card-image mdl-card mdl-shadow--2dp">
+    <div class="hero mdl-card mdl-shadow--2dp">
       <div class="mdl-card__title mdl-card--expand"></div>
       <div class="mdl-grid">
 
@@ -159,26 +174,39 @@
         </div>
       </section>
 
-      <div style="padding: 1%; padding-top: 0!important; ">
-        <h1 style="float:left ">authors</h1>
-        <h2 style="float:right">more</h2>
-      </div>
+
+      <section id="authors">
+
+        <div class="section-title mdl-grid">
+          <div class="section-name mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+            <span>Authors</span>
+          </div>
+          <div class="section-more mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+            <span>MORE</span>
+          </div>
+        </div>
+
+        <div class="authors-container">
+
+          <div class="author">
+            <img src="poe.jpg" alt="Edgar Allan Poe" class="author-img">
+            <p class="author-name">Edgar Allan Poe</p>
+          </div>
+
+          <div class="author">
+            <img src="collins.jfif" alt="Suzanne Collins" class="author-img">
+            <p class="author-name">Suzanne Collins</p>
+          </div>
+
+          <div class="author">
+            <img src="bukowski.jpg" alt="Charles Bukowski" class="author-img">
+            <p class="author-name">Charles Bukowski</p>
+          </div>
+
+        </div>
 
 
-      <div>
-        <div>
-          <img src='foto-de-edgar-allan-poe-2.jpg' class="autores">
-          <figcaption>Edgar</figcaption>
-        </div>
-        <div>
-          <img src="images.jfif" class="autores">
-          <figcaption>Suzanne Collins</figcaption>
-        </div>
-        <div>
-          <img src='20092016-livros-charles-bukowski-380x249.jpg' class="autores">
-          <figcaption>Bukowski</figcaption>
-        </div>
-      </div>
+      </section>
 
   </main>
 

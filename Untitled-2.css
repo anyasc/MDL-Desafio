@@ -9,42 +9,31 @@ body {
 }
 
 #nav {
+  padding-top: 10px;
   background-color: blueviolet;
 }
 
-/* TOPNAV  */
-.topnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
+.search {
+  padding: 10px;
+  margin: 0 10px 10px 10px;
+  display: flex;
+  background-color: white;
 }
 
-.topnav .search-container {
-  float: right;
+.search-icons {
+  font-size: 20px;
+  flex-basis: 1;
 }
 
-.topnav input[type="text"] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  width: 20vw;
+#search-input {
+  flex-basis: 75vw;
 }
 
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: blueviolet;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+#search-input > input {
+  width: 75vw;
+  padding: 0 10px;
+  border: 0;
 }
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
 
 .nav-icons {
   color: rgb(235, 235, 235);
@@ -53,15 +42,19 @@ body {
   font-size: 30px;
 }
 
+#mic {
+  text-align: end;
+}
+
 /*Image card*/
 
-.demo-card-image.mdl-card {
+.hero.mdl-card {
   width: 100vw;
   background-position-y: 12%;
   background: url("https://i.pinimg.com/originals/ba/8a/d6/ba8ad61e02a2986d591390953fb3eba8.jpg") center / cover;
 }
 
-.demo-card-image > .mdl-grid {
+.hero > .mdl-grid {
   width: 100%;
   height: 150px;
   padding: 16px;
@@ -155,32 +148,19 @@ body {
   text-align: right;
 }
 
+/* Authors */
 
-.demo-card-wide.mdl-card {
-  width: 110px;
-  display: inline-block;
-  margin: 10px;
-  margin-left: 2px !important;
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url("https://getmdl.io/assets/demos/welcome_card.jpg") center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
+.authors-container {
+  display: flex;
 }
 
-
-
-.autores {
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  float: left;
+.author {
   padding: 10px;
 }
 
-figcaption {
-  float: left;
+.author-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
+
